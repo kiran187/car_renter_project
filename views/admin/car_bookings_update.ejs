@@ -1,0 +1,82 @@
+<%-include("navbar.ejs")%>
+
+<style>
+    .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+           
+            float: left;
+            margin: auto;
+          }
+          .form-container h1 {
+            color: #ffc107;
+          }
+</style>
+
+
+<div class="container-fluid d-flex align-items-center ">
+    <div class="form-container">
+      <h1 class="text-center">Car Booking</h1>
+      
+      <form action="/admin/submit_car_booking_update" method="POST" enctype="multipart/form-data">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="row">
+                          <div class="form-group col-md-6">
+                            <input type="text" name="car_id" value="<%-old_data.car_bookings_id%>">
+                              <label for="car_name" class="text-white" style="margin-left: 50%;">Car Name</label>
+                              <input type="text" value="<%-old_data.car_name%>" class="form-control" id="car_name" name="car_name" required>
+                            </div>
+                            <div class="form-group col-md-3">
+                              <label for="background_img" class="text-white text-center" style="margin-left: 10%;">Background Image URL</label>
+                              <input type="file" class="form-control" id="background_img" name="background_img" required>
+                            </div>
+                            <div class="form-group col-md-3">
+                                 <img src="/uploads/<%-old_data.off_button_background_img%>" width="100px" height="100px">
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="row">
+                          <div class="form-group col-md-4">
+                              <label for="h1_tag" class="text-white text-center" style="margin-left: 20%;">Heading (H1 Tag)</label>
+                              <input type="text" value="<%-old_data.h1_tag%>" class="form-control" id="h1_tag" name="h1_tag" required>
+                          </div>
+                          <div class="form-group col-md-4">
+                              <label for="special_discount" class="text-white text-center" style="margin-left: 20%;">Special Discount (Excluding Fees)</label>
+                              <input type="text" value="<%-old_data.special_discount%>" class="form-control" id="special_discount" name="special_discount" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="excluding_fees" class="text-white text-center"  style="margin-left: 20%;">Excluding Fees</label>
+                              <input type="text" value="excluding_fees" class="form-control" id="excluding_fees" name="excluding_fees" required>
+                            </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group col-md-12">
+                          <label for="p_tag" class="text-white text-center" style="margin-left: 50%;">Paragraph (P Tag)</label>
+                          <textarea class="form-control" id="p_tag" name="p_tag" rows="3" required><%-old_data.p_tag%></textarea>
+                        </div>
+                  </div>
+              </div>
+          </div>
+
+          <button type="submit" class="btn btn-warning  " style="margin-left: 50%;" >Book Now</button>
+
+          </form></div></div>
+        
+        
+<%-include("footer.ejs")%>

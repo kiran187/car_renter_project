@@ -1,0 +1,616 @@
+
+.nav-item{
+    margin-left: 50px;
+   
+}
+.navbar-custom{
+    background-color: #333;
+}
+.navbar{
+    background-color: #333;
+}
+.fa-sharp{
+    color: yellow;
+}
+.text{
+    color: white;
+}
+.fa-brands{
+    color: white;
+}
+.slider{
+    color: black;
+    background-image: url('https://www.bmw-bavariamotors.in/sites/default/files/sliders/i4.jpg');
+   background-size: cover ;
+   background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+.card{
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.our_car{
+    background-color:white;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+
+
+.our_card{
+    background-color: black;
+}
+.trends_designs{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    float: left;
+}
+.trends_designs_2{
+    width: 40%;
+    height: 300px;
+    margin-left: 80px;
+    background-color: aqua;
+    float: left;
+}
+.trends_designs_3{
+    width: 40%;
+    height: 300px;
+    margin-left: 20px;
+    background-color: aqua;
+    float: left;
+}
+.footer {
+    background-color: black;
+    margin-top: 20px;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer h5 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5em; /* Size of the icons */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column; /* Stack columns on smaller screens */
+        align-items: center; /* Center align content */
+    }
+
+    .footer h5 {
+        text-align: center; /* Center text for headings */
+    }
+}
+
+
+
+
+.trends{
+    width: 50%;
+    height: 300px;
+    
+    margin-left: 350px;
+    border-radius: 20px;
+    background-image: url(https://cdni.autocarindia.com/ExtraImages/20200916040623_2020-Mahindra-Thar-front-static.jpg);
+    background-size: cover;
+    float: left;
+}
+
+.deal{
+    width: 30%;
+    height: 200px;
+    margin-top: 35px;
+    background-color: #28a745;
+    float: left;
+}
+
+  .deal-of-day {
+    margin-top: 40px;
+    background-color: #54dc10de;
+    padding: 20px;
+    
+    text-align: center;
+  }
+  .car-card {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+ 
+  .car-card img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+    .card-custom {
+        width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+   
+    
+
+    .discount-tag {
+        background-color: #28a745;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 14px;
+    }
+    .price-discount {
+        font-weight: bold;
+        color: red;
+    }
+    .original-price {
+        text-decoration: line-through;
+    }
+    .book-btn {
+        background-color: #28a745;
+        color: white;
+        font-weight: bold;
+    }
+
+    .blog_slider{
+        color: black;
+    background-image: url('https://images.tv9hindi.com/wp-content/uploads/2022/10/PM-Modi-to-travel-Shree-Mahakaleshwar-Temple-in-Ujjain-historical-importance-of-uJjain-why-avantika-nagri-was-centre-to-science-and-math.jpg');
+   background-size: cover ;
+   background-repeat: no-repeat;
+   float: left;
+    height: 600px;
+    width: 100%;
+
+    }
+    .car_rental_blog{
+        width: 60%;
+        height: 200px;
+        margin-top: 330px;
+        border: 5px solid white;
+        background-color:transparent;
+        border-radius: 10px;
+        opacity: 0.5;
+        background-color: #333;
+        float: left;
+    }
+    .blog_card{
+        width: 100%;
+        height: 300px;
+        
+        float: left;
+       
+    }
+    @media (max-width: 768px) {
+        .blog_card {
+           width: 100%;
+          margin-bottom: 950px;
+          
+           height: 300px;/* Center align content */
+           float: left;
+        }
+    
+        
+    }
+
+    .card_img_1{
+    width: 15%;
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left: 100px;
+    border: 5px solid green;
+   
+    float: left;
+    }
+    @media (max-width: 768px) {
+        .card_img_1 {
+           width: 100%;
+           margin-left: 0px;
+           float: left;
+           height: 200px;/* Center align content */
+        }
+    
+        
+    }
+
+    .card_img_2{
+        width: 15%;
+        height: 200px;
+        margin-top: 50px;
+        border-radius: 10px;
+        border: 5px solid green;
+        margin-left: 40px;
+       
+        float: left;
+    }
+    @media (max-width: 768px) {
+        .card_img_2 {
+           width: 100%;
+           margin-left: 0px;
+           float: left;
+           
+           height: 200px;/* Center align content */
+        }
+    
+        
+    }
+    
+    
+
+    .box1{
+        width:100%;
+        height: 150px;
+        
+        background-color:red;
+        float: left;
+    }
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+    .badge {
+        margin-right: 5px;
+    }
+    .top-cities-section {
+        background-color: #f8f9fa;
+        padding: 40px 0;
+    }
+    @media (max-width: 768px) {
+        .top-cities-section {
+           width: 100%;
+           margin-left: 20px;
+           float: left;
+           
+           /* Center align content */
+        }
+    
+        
+    }
+    
+    .city-list {
+        margin-bottom: 20px;
+    }
+    .city-list h5 {
+        color: #343a40;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .city-list ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .city-list ul li {
+        margin-bottom: 10px;
+    }
+    .city-list ul li a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    .city-list ul li a:hover {
+        text-decoration: underline;
+    }
+
+
+    .main{
+        height:50px;
+        width:100%;
+        float: left;
+        
+        
+    }
+    .aboutus{
+        height: 50px;
+        width:100%;
+        margin-top: 20px;
+        margin-left:10px;
+        background-color: black;
+    }
+        
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: white; /* Background color */
+    }
+    
+    .main {
+        display: flex;
+        justify-content: center;
+    
+        align-items: center;
+        height: 120px;   /*Full viewport height */
+    }
+    
+    .aboutus {
+        background-color: #2c3e50; /*Background color for the about section */
+        padding: 20px;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        text-align: center; /* Center text */
+    }
+    
+    h2 {
+        color: white;
+        margin: 0;
+    }
+    
+    
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+        .aboutus {
+            padding: 15px;
+            width: 50%; /* Adjust width on small screens */
+        }
+    }
+    
+    @media (min-width: 601px) {
+        .aboutus {
+            width: 50%; /* Adjust width on larger screens */
+        }
+    }
+    
+    
+    
+    
+    /card/
+    
+    
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    .carddiv {
+        display: flex;
+        flex-wrap: wrap; /* Allows boxes to wrap */
+        justify-content: center; /* Centers content */
+        gap: 10px; /* Space between boxes */
+        padding: 20px;
+    }
+    
+    .about_card {
+        background-color: #35424a;
+        background-image: url("https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fcar-images%2Fbig%2Fmahindra%2Fthar%2Fmahindra-thar.jpg%3Fv%3D36&w=3840&q=75");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        flex: 1; /* Makes boxes grow equally */
+        min-width: 250px; /* Minimum width for responsiveness */
+        max-width: 400px; /* Maximum width for larger screens */
+        text-align: center; /* Center text */
+        height:350px;
+        border: 2px solid yellow;
+    }
+    .box2{
+        background-color: #35424a;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        flex: 1; /* Makes boxes grow equally */
+        min-width: 250px; /* Minimum width for responsiveness */
+        max-width: 400px; /* Maximum width for larger screens */
+        text-align: center; /* Center text */
+        height:350px;
+    border:1px solid yellow;
+    }
+    
+    @media (max-width: 300px) {
+        .carddiv {
+            flex-direction: column; /* Stack boxes vertically on small screens */
+        }
+    }
+    
+    
+    
+    /multiplecaredive/
+    .multiplecardiv{
+        height:500px;
+        width:100%;
+        background-color:silver;
+    }
+    .indiv{
+        height:300px;
+        width:60%;
+        background-color: aqua;
+    margin-left:250px;
+        }
+    
+    
+    
+    
+        /resposive/
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        .multiplecardiv {
+            display: flex;
+            flex-wrap: wrap; /* Allows cards to wrap to the next line */
+            justify-content: center; /* Centers the cards */
+            gap: 20px; /* Space between cards */
+            padding: 20px;
+        }
+        
+        .indiv {
+            background-color: #35424a;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px black(0, 0, 0, 0.1);
+            flex: 1; /* Allows cards to grow equally */
+            min-width: 300px; /* Minimum width for responsiveness */
+            max-width: 900px; /* Maximum width for larger screens */
+            text-align: center; /* Center text */
+            margin-right:200px;
+            height:470px;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/027/744/707/small_2x/racing-car-at-high-speed-racer-on-a-racing-car-passes-the-track-motor-sports-competitive-team-racing-motion-blur-background-photo.jpg");
+            background-repeat: no-repeat;  
+            background-size: cover;
+        }
+        
+        @media (max-width: 300px) {
+            .multiplecardiv {
+                flex-direction: column; /* Stack cards vertically on small screens */
+                align-items: center; /* Center cards horizontally */
+            }
+        }
+        
+    
+    
+    
+    
+    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white; /* Background color */
+        }
+        
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;   /*Full viewport height */
+            width:100%;
+            float:left;
+            
+        }
+        
+        .travel{
+            background-color: #2c3e50; /*Background color for the about section */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Center text */
+            width:100%;
+            float:left;
+        }
+        
+        h2 {
+            color: white;
+            margin: 0;
+        }
+        
+        
+    
+        .card{
+            
+            border:2px solid black;
+            margin:30px;
+            margin-left: 130px;
+            border-radius: 10px;
+            
+            float:left;
+        }
+        
+    
+        .footer{
+            background-color: #2c3e50;
+            height:300px;
+            width:100%;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+        .contact-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info i {
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+        .service_card_2{
+            width: 100%;
+            height: 100px;
+            background-color: red;
+           
+            float: left;
+        }
+        .Travel_Guide {
+            width: 100%;
+            
+            padding-top: 20px; /* Add some space at the top */
+          }
+          
+          .card {
+            margin: auto;
+            margin-left: 40px;
+          }
+          
+          @media (max-width: 768px) {
+            .Travel_Guide {
+              height: auto;
+            }
+          }
+
+          .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            float: left;
+            margin: auto;
+          }
+          .form-container h1 {
+            color: #ffc107;
+          }
+       
+    </style>
+    
+   
+    
+    

@@ -1,0 +1,47 @@
+<%-include("navbar.ejs")%>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>slider</h4>
+                </div>
+                <div class="card-body">
+                    <form action="/admin/submit_form" method="post" enctype="multipart/form-data">
+                        
+                        <!-- Image upload -->
+                        <div class="form-group">
+                            <label for="imageUpload">Upload Image</label>
+                            <input type="file" class="form-control-file" id="imageUpload" name="image_path" required><br>
+                            <img src="/uploads/<%=old_data.image_path%>" height="100px" width="100px">
+                            
+                        </div>
+                        
+                        
+                        <!-- Heading input -->
+                        <div class="form-group">
+                            <label for="heading">Heading</label>
+                            <input type="text" class="form-control" value="<%-old_data.heading%>" id="heading" name="heading" placeholder="Enter Heading" required>
+                        </div>
+
+                        <!-- Details input -->
+                        <div class="form-group">
+                            <label for="details">Details</label>
+                            <textarea class="form-control" id="details" name="details" rows="4" placeholder="Enter details here" required><%-old_data.details%></textarea>
+                        </div>
+                        
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+
+
+<%-include("footer.ejs")%>

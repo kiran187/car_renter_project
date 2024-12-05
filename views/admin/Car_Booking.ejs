@@ -1,0 +1,147 @@
+<%-include("navbar.ejs")%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Booking Form</title>
+  
+  <style>
+    
+    .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+           
+            float: left;
+            margin: auto;
+          }
+          .form-container h1 {
+            color: #ffc107;
+          }
+  </style>
+</head>
+<body>
+    <div class="container-fluid d-flex align-items-center ">
+      <div class="form-container">
+        <h1 class="text-center">Car Booking</h1>
+        
+        <form action="/admin/submit_car_booking" method="POST" enctype="multipart/form-data">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="car_name  " class="text-white" style="margin-left: 50%;">Car Name</label>
+                                <input type="text" class="form-control" id="car_name" name="car_name" required>
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="background_img" class="text-white text-center" style="margin-left: 50%;">Background Image URL</label>
+                                <input type="file" class="form-control" id="background_img" name="background_img" required>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group col-md-4">
+                                <label for="h1_tag" class="text-white text-center" style="margin-left: 20%;">Heading (H1 Tag)</label>
+                                <input type="text" class="form-control" id="h1_tag" name="h1_tag" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="special_discount" class="text-white text-center" style="margin-left: 20%;">Special Discount (Excluding Fees)</label>
+                                <input type="text" class="form-control" id="special_discount" name="special_discount" required>
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="excluding_fees" class="text-white text-center"  style="margin-left: 20%;">Excluding Fees</label>
+                                <input type="text" class="form-control" id="excluding_fees" name="excluding_fees" required>
+                              </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group col-md-12">
+                            <label for="p_tag" class="text-white text-center" style="margin-left: 50%;">Paragraph (P Tag)</label>
+                            <textarea class="form-control" id="p_tag" name="p_tag" rows="3" required></textarea>
+                          </div>
+                    </div>
+                </div>
+            </div>
+          
+          
+          
+          
+          
+          
+          <button type="submit" class="btn btn-warning  " style="margin-left: 50%;" >Book Now</button>
+
+
+          <table width="100%" border="1" class="mt-5">
+            <tr>
+              <th style="color: yellow">action</th>
+              <th style="color: yellow">sr</th>
+              <th style="color: yellow">car_name </th>
+              <th style="color: yellow">background_img</th>
+              <th style="color: yellow">excluding_fees</th>
+              <th style="color: yellow">h1_tag</th>
+              <th style="color: yellow"> p_tag</th>
+              <th style="color: yellow">special_discount</th>
+            </tr>
+
+            <% sr=1; for(i of old_data) {%> 
+              
+              <tr>
+                <td>
+                 <a href="/admin/car_bookings_delete/<%-i.car_bookings_id%>" onclick="return confirmDelete()">delete</a>
+                  <a href="/admin/car_bookings_update/<%-i.car_bookings_id%>">update</a>
+                </td>
+                <td style="color: white"><%-sr++%></td>
+                <td style="color: white;"><%-i.car_name%></td>
+                <td><img src="/uploads/<%-i.off_button_background_img%>" width="100px" height="100px"></td>
+                <td style="color: white;"><%-i.excluding_fees%></td>
+                <td style="color: white;"><%-i.h1_tag%></td>
+                <td style="color: white;"><%-i.p_tag%></td>
+                <td style="color: white;"><%-i.special_discount%></td>
+              </tr>
+            
+              <% } %>
+          </table>
+        </form>
+      </div>
+    </div>
+    
+
+   
+    
+   </body>
+</html>
+
+<script>
+  function confirmDelete() {
+    return confirm("Are you sure you want to delete this trip?");
+  }
+</script>
+<!--
+CREATE TABLE car_bookings (
+    car_bookings_id INT AUTO_INCREMENT PRIMARY KEY,
+    car_name VARCHAR(255) NOT NULL,
+    off_button_background_img VARCHAR(255),
+    excluding_fees VARCHAR(255)
+    h1_tag VARCHAR(255),
+    p_tag TEXT,
+    special_discount DECIMAL(10, 2),
+    
+);
+
+-->
+
+<%-include("footer.ejs")%>

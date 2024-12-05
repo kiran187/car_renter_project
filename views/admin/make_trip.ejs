@@ -1,0 +1,40 @@
+<%- include("navbar.ejs") %>
+
+<table class="table table-bordered table-hover mt-4">
+    <thead class="thead-light">
+        <tr>
+            <th>Action</th>
+            <th>SN</th>
+            <th>Pick Up Location</th>
+            <th>Pick Up Time</th>
+            <th>Drop Off Time</th>
+            <th>Pick Up Date</th>
+            <th>Drop Off Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% sr=1; for(i of old_data){%> 
+            <tr>
+                <td>
+                    <!-- Define the action buttons (e.g., Edit, Delete, etc.) -->
+                    <a href="/admin/edite/<%= i.make_trip_id %>" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="/admin/delete/<%= i.make_trip_id %>" onclick="return confirmDelete()" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+                <td><%= sr++%></td>
+                <td><%= i.pick_up_location %></td>
+                <td><%= i.pick_up_time %></td>
+                <td><%= i.drop_off_time %></td>
+                <td><%= i.pick_up_date %></td>
+                <td><%= i.drop_off_date %></td>
+            </tr>
+            <% } %>
+    </tbody>
+</table>
+<script>
+    function confirmDelete() {
+      return confirm("Are you sure you want to delete this trip?");
+    }
+  </script>
+  
+
+<%- include("footer.ejs") %>
